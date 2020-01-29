@@ -1,6 +1,10 @@
-let check =() => {
+let insert =() => {
   let str = prompt("何か入力してください！");
 
-  if (str === 'javascript')
-      alert('Hello, JavaScript!');
-}
+  let ul = document.getElementById("dom");
+
+  let li = document.createElement('li');
+  li.innerText = str;
+
+  ul.appendChild(li);
+};
