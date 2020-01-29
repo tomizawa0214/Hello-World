@@ -1,10 +1,10 @@
 let insert =() => {
-  let str = prompt("何か入力してください！");
+  let str = "Hello,JavaScript!"
 
-  let ul = document.getElementById("dom");
+  let ul = document.getElementById("insert");
 
   let li = document.createElement('li');
-  li.innerText = str;
+  li.innerText = 'Hello, JavaScript!';
 
   ul.appendChild(li);
 };
