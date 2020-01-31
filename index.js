@@ -1,10 +1,14 @@
-let insert =() => {
-  let str = "Hello,JavaScript!"
+$(function() {
+  $("#insert").click(function() {
+    let str= prompt("何か入力してください！");
+    $("#dom").append($("<li>").text(str));
+  });
 
-  let ul = document.getElementById("insert");
+  $(".add").on('click' , function() {
+    $(".ar-content").addClass("ar-content-bg");
+  });
 
-  let li = document.createElement('li');
-  li.innerText = 'Hello, JavaScript!';
-
-  ul.appendChild(li);
-};
+  $(".remove").on('click' , function() {
+    $(".ar-content").removeClass("ar-content-bg");
+  });
+});

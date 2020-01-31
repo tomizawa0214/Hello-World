@@ -2,11 +2,29 @@
 <html>
   <head>
     <meta charset="UTF-8"/>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU" crossorigin="anonymous"></script>
   </head>
   <body>
-    <button onclick="insert()">Insert</button>
+    <button id="insert">Insert</button>
 
-    <ul id="insert"></ul>
+    <ul id="dom"></ul>
+
+    <button class="add">Add</button>
+    <button class="remove">Remove</button>
+
+    <div class="ar-content">
+      Hello World!
+    </div>
+
+    <style>
+      .ar-content {
+          background-color: gray;
+      }
+
+      .ar-content-bg {
+          background-color: red;
+      }
+    </style>
 
     <script type="text/javascript" src="index.js"></script>
   </body>
