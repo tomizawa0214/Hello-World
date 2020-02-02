@@ -2,19 +2,23 @@
 <html>
   <head>
     <meta charset="UTF-8"/>
-    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
   </head>
   <body>
     <button id="insert">Insert</button>
 
     <ul id="dom"></ul>
 
-    <button class="add">Add</button>
-    <button class="remove">Remove</button>
-
     <div class="ar-content">
       Hello World!
     </div>
+
+    <button class="show-content">Show</button>
+    <button class="hide-content">Hide</button>
+    <button class="add">Add</button>
+    <button class="remove">Remove</button>
 
     <style>
       .ar-content {
@@ -25,6 +29,9 @@
           background-color: red;
       }
     </style>
+
+    <button id="openModal">ダイアログを開く</button>
+    <div id="modal" title="モーダルウィンドウのデモです">Hello World!</div>
 
     <script type="text/javascript" src="index.js"></script>
   </body>
