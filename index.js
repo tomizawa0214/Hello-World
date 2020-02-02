@@ -13,11 +13,11 @@ $(function() {
   });
 
   $(".show-content").on('click' , function() {
-    $(".ar-content").show();
+    $(".ar-content2").show();
   });
 
   $(".hide-content").on('click' , function() {
-    $(".ar-content").hide();
+    $(".ar-content2").hide();
   });
 
   $("#modal").dialog({ autoOpen: false });
@@ -25,4 +25,6 @@ $(function() {
   $("#openModal").click(function() {
     $("#modal").dialog("open");
   });
+
+  $( "#accordion" ).accordion();
 });
