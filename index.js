@@ -1,8 +1,4 @@
 $(function() {
-  $("#modal").dialog({ autoOpen: false });
-  $("#openModal").click(function() {
-    $("#modal").dialog("open");
-  });
   $("#insert").click(function() {
     let str= prompt("何か入力してください！")
     $("#dom").append($("<li>").text(str));
@@ -18,5 +14,14 @@ $(function() {
   });
    $(".hide-content").on('click' , function() {
     $(".ar-content").hide();
+  });
+   $("#modal").dialog({ autoOpen: false });
+   $("#openModal").click(function() {
+     posi = $(window).scrollTop();
+     $('[data-modal="fixed"]').css({
+       position: 'fixed',
+       top: -1 * posi
+  });
+    $("#modal").dialog("open");
   });
 });
