@@ -17,11 +17,6 @@ $(function() {
   });
    $("#modal").dialog({ autoOpen: false });
    $("#openModal").click(function() {
-     posi = $(window).scrollTop();
-     $('[data-modal="fixed"]').css({
-       position: 'fixed',
-       top: -1 * posi
-  });
     $("#modal").dialog("open");
   });
 });
