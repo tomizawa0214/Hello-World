@@ -18,5 +18,7 @@ $(function() {
    $("#modal").dialog({ autoOpen: false });
    $("#openModal").click(function() {
     $("#modal").dialog("open");
+    $("#modal").prop('disabled', false);
+    $('button').prop('disabled', true);
   });
 });
