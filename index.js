@@ -15,12 +15,12 @@ $(function() {
   $(".hide-content").on('click' , function() {
     $(".ar-content").hide();
   });
-  $("#modal").dialog({ autoOpen: false });
+  $("#modal").dialog({ autoOpen: false, close: function() {
+        $('#insert,.add,.remove,.show-content,.hide-content').prop('disabled', false);
+      }
+  });
   $("#openModal").click(function() {
     $("#modal").dialog("open");
     $('#insert,.add,.remove,.show-content,.hide-content').prop('disabled', true);
   });
-  if($("#modal").dialog("close")){
-      $('#insert,.add,.remove,.show-content,.hide-content').prop('disabled', true);
-  }
 });
